@@ -1,4 +1,4 @@
-﻿asgiref==3.8.1
+asgiref==3.8.1
 distlib==0.3.8
 dj-database-url==2.2.0
 Django==5.0.7
