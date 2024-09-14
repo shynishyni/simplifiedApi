@@ -96,7 +96,7 @@ DATABASES = {
         'NAME': os.getenv('DB_NAME'),
         'USER': os.getenv('DB_USER'),
         'PASSWORD': os.getenv('DB_PASSWORD'),
-        'HOST': https://simplified-api.vercel.app/,
+        'HOST': simplified-api.vercel.app,
         'PORT': os.getenv('DB_PORT', '3306'),
     }
 }
