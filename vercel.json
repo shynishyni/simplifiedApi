@@ -12,9 +12,9 @@
     }
   ],
   "env": {
-    "SECRET_KEY": "@your-secret-key",
+    "SECRET_KEY": "ijk)y&=u@1#8pr_!$vkl158uoe8r9ti=2yc#ii^u_q58*#9!tr",
     "DEBUG": "false",
-    "ALLOWED_HOSTS": "['your-vercel-url.vercel.app']",
-    "DATABASE_URL": "@your-database-url"
+    "ALLOWED_HOSTS": "['bnwvjp1e732ph31ws9ul-mysql.services.clever-cloud.com']",
+    "DATABASE_URL": "mysql://usjdpfdshduv37f2:Ytw2AMTHGEfNaPorOO6V@bnwvjp1e732ph31ws9ul-mysql.services.clever-cloud.com:3306/bnwvjp1e732ph31ws9ul"
   }
 }
