@@ -6,10 +6,11 @@
                     "runtime": "python3.12",
                     "install-command": "pip install --target /vercel/path0 --upgrade -r requirements.txt",
                     "build-commands": [
-  "sudo apt-get update",
-  "sudo apt-get install -y libmariadb-dev libssl-dev pkg-config",
-  "export MYSQLCLIENT_CFLAGS=-I/usr/include/mariadb",
-  "export MYSQLCLIENT_LDFLAGS=-L/usr/lib/mariadb -lmariadb"
+    "sudo apt-get update",
+    "sudo apt-get install -y libmariadb-dev libssl-dev pkg-config",
+    "export MYSQLCLIENT_CFLAGS=-I/usr/include/mariadb",
+    "export MYSQLCLIENT_LDFLAGS=-L/usr/lib/mariadb -lmariadb",
+    "sudo apt-get install -y default-libmysqlclient-dev"  // Add this line to ensure MySQL client dev libraries are available
 ]
  }
     }],
