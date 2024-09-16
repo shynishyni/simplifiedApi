@@ -10,6 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
+import pymysql
+pymysql.install_as_MySQLdb()
+
 from pathlib import Path
 # settings.py
 
@@ -81,8 +84,7 @@ WSGI_APPLICATION = 'simplifiedApi.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 import dj_database_url
-import pymysql
-pymysql.install_as_MySQLdb()
+
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
@@ -101,7 +103,7 @@ DATABASES = {
     }
 }
 
-DATABASES['default'] = dj_database_url.parse('mysql://root:Shyni@123@127.0.0.1:3306/shynidb')
+DATABASES['default'] = dj_database_url.parse(os.getenv('DATABASE_URL'))
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
