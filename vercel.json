@@ -10,8 +10,7 @@
     "sudo apt-get install -y libmariadb-dev libssl-dev pkg-config",
     "export MYSQLCLIENT_CFLAGS=-I/usr/include/mariadb",
     "export MYSQLCLIENT_LDFLAGS=-L/usr/lib/mariadb -lmariadb",
-    "sudo apt-get install -y default-libmysqlclient-dev"  // Add this line to ensure MySQL client dev libraries are available
-]
+    "sudo apt-get install -y default-libmysqlclient-dev"  ]
  }
     }],
     "routes":[
