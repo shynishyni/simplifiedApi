@@ -1,22 +1,20 @@
 {
-    "builds":[{
-        "src":"simplifiedApi/wsgi.py",
-        "use":"@vercel/python",
-        "config":{ "maxLambdaSize": "15mb",
-                    "runtime": "python3.12",
-                    "install-command": "pip install --target /vercel/path0 --upgrade -r requirements.txt",
-                    "build-commands": [
-    "sudo apt-get update",
-    "sudo apt-get install -y libmariadb-dev libssl-dev pkg-config",
-    "export MYSQLCLIENT_CFLAGS=-I/usr/include/mariadb",
-    "export MYSQLCLIENT_LDFLAGS=-L/usr/lib/mariadb -lmariadb",
-    "sudo apt-get install -y default-libmysqlclient-dev"  ]
- }
-    }],
-    "routes":[
-        {
-            "src": "/(.*)",
-            "dest": "simplifiedApi/wsgi.py"
-        }
-    ]
+  "builds": [
+    {
+      "src": "simplifiedApi/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "simplifiedApi/wsgi.py"
+    }
+  ],
+  "env": {
+    "SECRET_KEY": "@your-secret-key",
+    "DEBUG": "false",
+    "ALLOWED_HOSTS": "['your-vercel-url.vercel.app']",
+    "DATABASE_URL": "@your-database-url"
+  }
 }
